@@ -34,7 +34,7 @@ function saveThuebotData() {
 }
 function createNewKey(durationInMonths) {
     const randomPart = crypto.randomBytes(2).toString('hex');
-    const newKey = `adz_${randomPart}`;   //key đầu nha 
+    const newKey = `shark_${randomPart}`;   //key đầu nha 
     keysData.push({ key: newKey, used: false, duration: durationInMonths });
     saveKeysData();
     return newKey;
